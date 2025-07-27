@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal M G - Premium Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span>PMG</span>
+                </div>
+            </div>
+            <div class="loading-text">PRAJWAL M G</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-circle">
+                        <span>PMG</span>
+                    </div>
+                    <h1>PRAJWAL M G</h1>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="premium-blob blob-1"></div>
+            <div class="premium-blob blob-2"></div>
+            <div class="premium-blob blob-3"></div>
+            <div class="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <i class="fas fa-microchip"></i>
+                    <span>EMBEDDED SYSTEMS EXPERT</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">HI, I'M</span>
+                    <span class="title-main gradient-text">PRAJWAL M G</span>
+                    <span class="title-sub">CREATING THE FUTURE</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    <span class="highlight">Embedded Systems Enthusiast</span> | 
+                    <span class="highlight">IoT Developer</span> | 
+                    <span class="highlight">Electronics Engineer</span>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">8.7</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button class="cta-button primary" onclick="scrollToSection('projects')">
+                        <span>VIEW PROJECTS</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="cta-button secondary" onclick="scrollToSection('contact')">
+                        <span>GET IN TOUCH</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="prajwal-photo.jpg" alt="Prajwal M G">
+                        <div class="profile-overlay">
+                            <div class="profile-badge">
+                                <i class="fas fa-award"></i>
+                                <span>TOP PERFORMER</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-frame"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-user-tie"></i>
+                    <span>ABOUT ME</span>
+                </div>
+                <h2 class="section-title">WHO I AM</h2>
+                <p class="section-subtitle">Passionate about creating innovative solutions through embedded systems and IoT technology</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>VISION & MISSION</h3>
+                        </div>
+                        <p>Motivated and detail-oriented engineering student with a strong foundation in electronics and programming. Passionate about embedded systems and sustainable technology, driving innovation through cutting-edge IoT solutions.</p>
+                    </div>
+                    
+                    <div class="skills-showcase">
+                        <h3>SOFT SKILLS</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fas fa-users"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-clock"></i>
+                                <span>Time Management</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-brain"></i>
+                                <span>Analytical Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right">
+                    <div class="tech-expertise">
+                        <h3>TECHNICAL EXPERTISE</h3>
+                        
+                        <div class="expertise-category">
+                            <h4><i class="fas fa-code"></i> PROGRAMMING LANGUAGES</h4>
+                            <div class="expertise-items">
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">C</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">C++</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">Python</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="expertise-category">
+                            <h4><i class="fas fa-microchip"></i> DEVELOPMENT TOOLS</h4>
+                            <div class="expertise-items">
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">MPLAB X IDE</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">Proteus</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">Arduino</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 96%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="expertise-category">
+                            <h4><i class="fas fa-microchip"></i> MICROCONTROLLERS</h4>
+                            <div class="expertise-items">
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">PIC</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">AVR</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <div class="expertise-icon">ARM</div>
+                                    <div class="expertise-bar">
+                                        <div class="expertise-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="education-section">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EDUCATION</span>
+                    </div>
+                    <h3>ACADEMIC JOURNEY</h3>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>B.E. ELECTRONICS & COMMUNICATION</h4>
+                                    <span class="timeline-period">2023 - 2027</span>
+                                </div>
+                                <p class="timeline-institution">PES College of Engineering, Mandya</p>
+                                <div class="timeline-achievement">
+                                    <span class="achievement-badge">CGPA: 8.7</span>
+                                    <span class="achievement-status">ONGOING</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>PUC - SCIENCE</h4>
+                                    <span class="timeline-period">2021 - 2023</span>
+                                </div>
+                                <p class="timeline-institution">Viveka PU College, Sargur</p>
+                                <div class="timeline-achievement">
+                                    <span class="achievement-badge">Marks: 561/600</span>
+                                    <span class="achievement-status">COMPLETED</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>SSLC</h4>
+                                    <span class="timeline-period">2020 - 2021</span>
+                                </div>
+                                <p class="timeline-institution">Adarsha Vidyalaya, Hunsur</p>
+                                <div class="timeline-achievement">
+                                    <span class="achievement-badge">Marks: 518/625</span>
+                                    <span class="achievement-status">COMPLETED</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>PROJECTS</span>
+                </div>
+                <h2 class="section-title">INNOVATION PORTFOLIO</h2>
+                <p class="section-subtitle">Cutting-edge embedded systems and IoT solutions</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card premium" onclick="toggleProject(this)">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <i class="fas fa-home"></i>
+                            <span>SMART AUTOMATION</span>
+                        </div>
+                        <div class="project-title">
+                            <h3>Smart Home Automation using Arduino</h3>
+                            <p>IoT-based home automation system with sensor integration and mobile app control</p>
+                        </div>
+                        <div class="project-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <span class="tech-badge">Arduino</span>
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">IoT</span>
+                        <span class="tech-badge">Mobile App</span>
+                        <span class="tech-badge">Sensors</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-features">
+                            <h4>KEY FEATURES</h4>
+                            <ul>
+                                <li><i class="fas fa-bolt"></i> Automated lighting control based on motion detection</li>
+                                <li><i class="fas fa-bolt"></i> Fan speed control with temperature sensors</li>
+                                <li><i class="fas fa-bolt"></i> Mobile app for remote control</li>
+                                <li><i class="fas fa-bolt"></i> Energy efficiency monitoring</li>
+                                <li><i class="fas fa-bolt"></i> Real-time status dashboard</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link github">
+                                <i class="fab fa-github"></i>
+                                <span>VIEW CODE</span>
+                            </a>
+                            <a href="#" class="project-link live">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>LIVE DEMO</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card premium" onclick="toggleProject(this)">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <i class="fas fa-cloud"></i>
+                            <span>WEATHER MONITORING</span>
+                        </div>
+                        <div class="project-title">
+                            <h3>Real-time Weather Monitor with IoT</h3>
+                            <p>IoT weather monitoring system with real-time data collection and web dashboard</p>
+                        </div>
+                        <div class="project-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <span class="tech-badge">ESP32</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">IoT</span>
+                        <span class="tech-badge">Web Dashboard</span>
+                        <span class="tech-badge">Sensors</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-features">
+                            <h4>KEY FEATURES</h4>
+                            <ul>
+                                <li><i class="fas fa-bolt"></i> Real-time temperature and humidity monitoring</li>
+                                <li><i class="fas fa-bolt"></i> Cloud-based data storage and analytics</li>
+                                <li><i class="fas fa-bolt"></i> Web dashboard with historical data</li>
+                                <li><i class="fas fa-bolt"></i> Mobile notifications for weather alerts</li>
+                                <li><i class="fas fa-bolt"></i> Integration with weather APIs</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link github">
+                                <i class="fab fa-github"></i>
+                                <span>VIEW CODE</span>
+                            </a>
+                            <a href="#" class="project-link live">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>LIVE DEMO</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <div class="cta-content">
+                    <h3>MORE INNOVATIONS COMING SOON</h3>
+                    <p>Stay tuned for cutting-edge embedded systems and IoT projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-envelope"></i>
+                    <span>CONTACT</span>
+                </div>
+                <h2 class="section-title">LET'S CONNECT</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's discuss your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>PHONE</h4>
+                            <p>+91 9901949375</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>EMAIL</h4>
+                            <a href="mailto:lavamg335@gmail.com">lavamg335@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LOCATION</h4>
+                            <p>Karnataka, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form premium">
+                    <div class="form-header">
+                        <h3>SEND ME A MESSAGE</h3>
+                        <p>I'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>SEND MESSAGE</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <span>PMG</span>
+                    </div>
+                    <h3>PRAJWAL M G</h3>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Prajwal M G. All Rights Reserved.</p>
+                    <p>Creating the future through embedded systems innovation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
